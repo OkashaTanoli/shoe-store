@@ -1,0 +1,95 @@
+.productsDiv{
+    width:1200px;
+    margin: 100px auto;
+    /* background-color: lavender !important; */
+}
+.card{
+    background-color: rgba(5, 5, 5, 0.658) !important;
+    border-radius: 8px !important ;
+    padding: 0 !important;
+    position:relative !important;
+    overflow: hidden !important;
+    cursor: pointer;
+}
+.card:hover .cardExtraDiv{
+    height: 100%;
+    background-color: rgba(241, 230, 208, 0.096);
+}
+
+.cardDivForPadding{
+    padding: 10px 30px 50px 30px !important;
+}
+.cardExtraDiv{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 6px;
+    background-color: rgb(241, 230, 208);
+    box-sizing:content-box;
+    transition-property: all !important;
+    transition-duration: .5s !important;
+}
+.imageDiv{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    /* background-color: thistle; */
+    align-items: center;
+    width: 100%;
+}
+.cardTitle{
+    color: rgb(192, 192, 192);
+    font-weight: 500;
+}
+.cardPrice{
+    color: rgb(192, 192, 192);
+    font-weight: 400;
+}
+.starIconDiv{
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.starIcon{
+    color: rgb(250, 204, 0);
+    font-size: 25px;
+    margin-right: 10px;
+}
+.cardText{
+    color: white;
+    font-size: 16px;
+}
+@media (max-width:1220px) {
+    .productsDiv{
+        width:90%;
+    }
+}
+@media (max-width:750px) {
+    .imageDiv{
+        height: 200px;
+    }
+    .cardTitle,.cardPrice{
+        font-size: 16px !important;
+        margin-bottom: 20px;
+    }
+    
+}
+@media (max-width:600px) {
+    .imageDiv{
+        height: 300px;
+    }
+    .cardTitle,.cardPrice{
+        font-size: 18px !important;
+        margin-bottom: 20px;
+    }
+    
+}
+@media (max-width:350px) {
+    .imageDiv{
+        height: 200px;
+    }
+    .cardTitle,.cardPrice{
+        font-size: 16px !important;
+        margin-bottom: 20px;
+    }
+    
+}
