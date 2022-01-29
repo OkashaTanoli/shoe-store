@@ -68,7 +68,7 @@ function Products() {
                                             <div className='cardDivForPadding'>
                                                 <div className='imageDiv'>
 
-                                                    <img height='auto' width='100%' src={shoeData[val].image} style={{ color: 'white' }} />
+                                                    <img height='auto' width='100%' src={shoeData[val].image} style={{ color: 'white' }} alt="shoe" />
                                                 </div>
                                                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                                                     <h2 className='cardTitle'>{shoeData[val].name}</h2>
